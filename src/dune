@@ -1,0 +1,21 @@
+(executable
+ ; https://dune.readthedocs.io/en/stable/
+ (name what_anime)
+ (flags
+  (:standard -w -24))
+ (libraries
+  yojson
+  lwt
+  cohttp
+  cohttp-lwt-unix
+  pastel.lib
+  cmdliner
+  multipart-form-data)
+ (public_name what-anime)
+ (preprocess
+  (pps ppx_deriving_yojson)))
+
+(env
+ (static
+  (flags
+   (:standard -ccopt -static))))
