@@ -1,4 +1,5 @@
 {
+  "name": "what-anime",
   "dependencies": {
     "ocaml": "4.12.x",
     "@opam/dune": "*",
@@ -17,5 +18,16 @@
   },
   "resolutions": {
     "@esy-ocaml/reason": "EduardoRFS/reason:reason.json#35aa4df3de0daa60bdc1133dcf97855decac48f7"
+  },
+  "scripts": {
+    "start": "esy x what-anime-re"
+  },
+  "esy": {
+    "build": "dune build -p #{self.name}",
+    "release": {
+      "releasedBinaries": [
+        "what-anime-re"
+      ]
+    }
   }
 }
