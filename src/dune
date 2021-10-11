@@ -11,7 +11,7 @@
   pastel.lib
   cmdliner
   multipart-form-data)
- (public_name what-anime)
+ (public_name what-anime-re)
  (preprocess
   (pps ppx_deriving_yojson)))
 
