@@ -5,15 +5,17 @@ Inspired by [irevenko/what-anime-cli](https://github.com/irevenko/what-anime-cli
 
 This application is basically a 🍬 wrapper around <a href="https://github.com/soruly/trace.moe">trace.moe </a>
 <p align="center">PREVIEW</p>
-<p align="center"><img src="./anime_images/record/demo.gif" width="650"></p>
+<p align="center"><img src="./images/demo.gif" width="650"></p>
 
 # Install 
 
+### MacOS 
+
 ```bash
-go install github.com/irevenko/what-anime-cli@latest
+brew tap bluuesz/what-anime-re
+brew install what-anime-re
 ```
 
-[AUR package](https://aur.archlinux.org/packages/what-anime-cli-git)
 
 # Usage 
 ### Get Anime By Image File 
