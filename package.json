@@ -1,5 +1,6 @@
 {
   "name": "what-anime",
+  "version": "0.1.1",
   "dependencies": {
     "ocaml": "4.12.x",
     "@opam/dune": "*",
