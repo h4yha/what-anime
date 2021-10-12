@@ -25,9 +25,8 @@
   "esy": {
     "build": "dune build -p #{self.name}",
     "release": {
-      "releasedBinaries": [
-        "what-anime-re"
-      ]
+      "bin": ["what-anime-re"],
+      "rewritePrefix": true
     }
   }
 }
