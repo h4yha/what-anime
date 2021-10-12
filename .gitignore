@@ -2,3 +2,5 @@ node_modules
 _esy
 .esy
 esy.lock
+_release
+*.install
