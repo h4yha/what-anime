@@ -32,7 +32,7 @@ let default_cmd = {
   let exits = Term.default_exits;
   (
     Term.(ret(const(`Help((`Pager, None))))),
-    Term.info("what-anime-cli", ~version="0.0.1", ~doc, ~sdocs, ~exits),
+    Term.info("what-anime-cli", ~version="0.1.0", ~doc, ~sdocs, ~exits),
   );
 };
 
