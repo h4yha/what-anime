@@ -1,0 +1,33 @@
+{
+  "name": "what-anime",
+  "version": "0.1.1",
+  "dependencies": {
+    "ocaml": "4.12.x",
+    "@opam/dune": "*",
+    "@opam/reason": "*",
+    "@opam/lwt": "*",
+    "@opam/cohttp": "*",
+    "@opam/cohttp-lwt-unix": "*",
+    "@opam/tls": "*",
+    "@opam/ppx_deriving_yojson": "*",
+    "@reason-native/pastel": "0.3.0",
+    "@opam/cmdliner": "*",
+    "@opam/multipart-form-data": "*"
+  },
+  "devDependencies": {
+    "@opam/ocaml-lsp-server": "*"
+  },
+  "resolutions": {
+    "@esy-ocaml/reason": "EduardoRFS/reason:reason.json#35aa4df3de0daa60bdc1133dcf97855decac48f7"
+  },
+  "scripts": {
+    "start": "esy x what-anime-re"
+  },
+  "esy": {
+    "build": "dune build -p #{self.name}",
+    "release": {
+      "bin": ["what-anime-re"],
+      "rewritePrefix": true
+    }
+  }
+}
